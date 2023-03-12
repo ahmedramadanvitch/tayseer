@@ -1,0 +1,127 @@
+// start team leader
+.team{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  @include mobileScreen{
+    min-height: 65vh !important;
+  }
+  h1{
+    color: $main-color !important;
+  }
+  hr{
+    background-color: $dark-color;
+    margin-bottom: 60px !important;
+  }
+  .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+    .slide-content{
+      margin: 0 60px;
+      overflow: hidden;
+      border-radius: 25px;
+      @include mobileScreen{
+        margin: 0 10px;
+        height: 335px !important;
+      }
+      .card{
+        border-radius: 25px !important;
+        background-color: rgb(255, 255, 255);
+        .image-content,
+        .card-content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 14px;
+        }
+        .image-content{
+          position: relative;
+          row-gap: 5px;
+          padding: 25px 0 10px;
+          .overlay{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 70%;
+            width: 100%;
+            background-color: $main-color;
+            border-radius: 25px 25px 0 0;
+          }
+          .card-image{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: $main-color;
+            padding: 3px;
+            .card-img{
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+              border-radius: 50%;
+              border: 4px solid white;
+            }
+          }
+        }
+        .card-content{
+          .name{
+            font-size: 25px;
+            font-weight: 700;
+            color: $main-color;
+          }
+          .description{
+            font-size: 17px;
+            color: #707070;
+            text-align: center;
+            margin-bottom: 0px !important;
+          }
+        }
+        .card-icons{
+          i{
+            &:hover{
+              transform: rotate(360deg);
+            }
+            @include mobileScreen{
+              font-size: 40px !important;
+            }
+
+          }
+          .fa-square-facebook{
+            color: #0045cf;
+          }
+          .fa-square-whatsapp{
+            color: #00ce1b;
+          }
+          .fa-square-instagram{
+            color: #c70841;
+          }
+        }
+      }
+    }
+    // arrow left and right
+    .swiper-navBtn{
+      color: $main-color !important;
+      transition: color 0.3s ease;
+      @include mobileScreen{
+        display: none !important;
+      }
+    }
+    .swiper-navBtn:hover{
+      color: $dark-color !important;
+    }
+    .swiper-navBtn::before,
+    .swiper-navBtn::after{
+      font-size: 35px;
+    }
+    .swiper-button-next{
+      right: 0;
+    }
+    .swiper-button-prev{
+      left: 0;
+    }
+  }
+}
+// end team leader

@@ -1,0 +1,106 @@
+// display in medium and large screen only
+.product{
+    .product-box{
+        @include mobileScreen{
+            display: none !important;
+        }
+        .big-image{
+            width: 600px;
+            height: 400px;
+            margin: 10px auto !important;
+            border: 4px solid $dark-color;
+            overflow: hidden;
+            &:hover{
+                cursor: pointer;
+                img{
+                    transform: scale(1.2);
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .images{
+            width: 100% !important;
+            .card{
+                padding: 0 !important;
+                border: 2px solid $dark-color;
+                height: 220px !important;
+                width: 250px !important;
+                .card-body{
+                    padding: 8px !important;
+                }
+                &:hover{
+                    border: 2px solid $main-color;
+                    .card-body{
+                        color: white;
+                        background-color: $main-color;
+                    }
+                }
+            }
+            .small-img-div{
+                width: 100% !important;
+                height: 170px !important;
+                overflow: hidden !important;
+                &:hover{
+                    cursor: pointer;
+                    img{
+                        transform: scale(1.2);
+                    }
+                }
+                img{
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+        }
+    }
+}
+// display in mobile screen only
+.product-carousel{
+    margin-top: 90px !important;
+    @include smallScreen{
+        display: none !important;
+    }
+    @include MediumScreen{
+        display: none !important;
+    }
+    @include largeScreen{
+        display: none !important;
+    }
+    .row{
+        .product-carousel-image{
+            .swiper{
+                // width: 110% !important;
+                .card-wrapper{
+                    @include mobileScreen{
+                        // height: 500px !important;
+                        // width: 800px;
+                    }
+                    .card{
+                        padding: 0 !important;
+                        border: 2px solid $dark-color;
+                        height: 455px !important;
+                        width: 100% !important;
+                        .small-img-div{
+                            height: 350px !important;
+                            img{
+                                width: 100% !important;
+                                height: 100% !important;
+                            }
+                        }
+                        .card-body{
+                            height: 50px !important;
+                            padding: 8px !important;
+                            background-color: $main-color;
+                        }
+                    }
+                }
+                .swiper-navBtn{
+                    color: rgb(124, 124, 124) !important;
+                }
+            }
+        }
+    }
+}

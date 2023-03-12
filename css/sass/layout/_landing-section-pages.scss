@@ -1,0 +1,30 @@
+.landing-section{
+    width: 100% !important;
+    height: 56vh !important;
+    position: relative !important;
+    z-index: 60 !important;
+    @include img-background;
+    background-attachment: fixed !important;
+    @include mobileScreen{
+        z-index: 100 !important;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(13, 29, 83, 0.514) !important;
+    }
+    .container{
+        z-index: 111;
+        h1{
+            transform: translateY(150px);
+            font-size: 50px;
+        }
+        span{
+            top: 180px;
+        }
+    }
+}

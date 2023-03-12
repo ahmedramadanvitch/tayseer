@@ -1,0 +1,173 @@
+// start top header
+header{
+    .container{
+        .brand-name{
+            &:hover{
+                a{
+                    color: $main-color !important;
+                    & > span{
+                        color: $dark-color;
+                        font-weight: 600;
+                        font-size: 35px;
+                    }
+                }
+            }
+            a{
+                font-size: 25px !important;
+                color: $dark-color !important;
+                & > span{
+                    color: $main-color;
+                    font-weight: 600;
+                    font-size: 35px;
+                }
+            }
+            span{
+                font-size: 17px;
+                color: $gray-color;
+            }
+        }
+        .icon-address{
+            &:hover{
+                i{
+                    border: 1px solid $dark-color !important;
+                    background-color: $dark-color;
+                    color: $main-color !important;
+                }
+            }
+            @include mobileScreen{
+                .fa-clock-rotate-left{
+                    position: relative !important;
+                    left: 10px !important;
+                }
+                .fa-phone-volume{
+                    position: relative !important;
+                    left: 33px !important;
+                }
+            }
+            p{
+                font-size: 16px;
+                color: $dark-color;
+                font-weight: 700;
+                @include mobileScreen{
+                    text-align: center;
+                }
+            }
+            span{
+                font-size: 13px;
+                color: $gray-color;
+            }
+        }
+    }
+}
+// end top header
+
+/* start nav brand in left of page display in small screen only */
+.navbar{
+    background-color: $dark-color;
+    top: 285px !important;
+    z-index: 1000000;
+    display: none !important;
+    height: 65px;
+    @media (min-width: 300px) and (max-width: 989px){
+        display: block !important;
+    }
+    @media (min-width: 768px) and (max-width: 989px){
+        top: 180px !important;
+    }
+    .navbar-brand-left{
+        color: $main-color !important;
+    }
+    .navbar-toggler{
+        color: $main-color;
+        position: relative;
+    }
+    .navbar-collapse{
+        position: relative;
+        top: 13px !important;
+        background-color: $dark-color;
+        .nav-link:nth-of-type(1){
+            color:  rgb(179, 179, 179) !important;
+            &:hover{
+                color: $main-color !important;
+            }
+        }
+        .dropdown-menu[data-bs-popper]{
+            border: none;
+            border-radius: 0px 0px 10px 10px;
+            top: 57px;
+            left: -20px;
+            margin-top: 4px;
+            background-color: transparent !important;
+            .dropdown-item{
+                transition: all .3s linear;
+                &:hover{
+                    color: $main-color !important;
+                    background-color: transparent !important;
+                    transition: all .3s linear;
+                }
+            }
+        }
+    }
+}
+/* End nav brand in left of page */
+
+/* %%% start nav brand in center of page %%% */
+.nav{
+    position: relative;
+    top: 110px !important;
+    background-color: $dark-color !important  ;
+    display: none;
+    height: 70px !important;
+    gap: 20px !important;
+    @media (min-width: 880px){
+        background-color: $main-color;
+        display: flex;
+    };
+    @media (min-width: 300px) and (max-width: 989px){
+        display: none !important;
+    }
+    .nav-item{
+        .nav-link{
+            transition: all .3s linear;
+            color: rgb(226, 226, 226) !important;
+            &:hover{
+                color: $main-color !important;
+                transform: scale(1.2);
+                transition: all .3s linear
+            }
+        }
+        .active{
+            color: $main-color !important;
+        }
+    }
+    .dropdown{
+        .dropdown-toggle::after{
+            display: none !important;
+        }
+        i{
+            display: none !important;
+        }
+        .dropdown-menu{
+            border: none;
+            border-radius: 0px 0px 10px 10px;
+            top: 4px !important;
+            left: -30px !important;
+            margin-top: 4px;
+            background-color: $dark-color;
+
+            .dropdown-item{
+                &:hover{
+                    color: $main-color !important;
+                }
+            }
+        }
+    }
+}
+
+.navbar-brand{
+    color: $main-color !important;
+}
+
+/* %%% End nav brand in center nav %%% */
+
+

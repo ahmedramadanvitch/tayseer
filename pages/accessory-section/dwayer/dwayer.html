@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> دوائر كهربائية </title>
+    <!-- main css -->
+    <link rel="stylesheet" href="../../../css/tayseer.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google - fonts -- cairo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- bootstrab -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- start nav ---- brand in left of page  in small screen -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="top: 0 !important;">
+        <div class="container">
+            <a class="navbar-brand-left fs-2 fw-bold" href="../../../index.html">
+                مــول الـتــيــسـيـر
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-list"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-2">
+                    <li class="nav-item">
+                        <a class="nav-link pe-3 active fs-5 home" aria-current="page" href="../../../index.html">الرئيسيه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-3 text-white-50 fs-5" href="../../../index.html">عــن الشـركـه</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link pe-3 text-white-50 fs-5" href="../../../index.html">تواصل مـعـنـا</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pe-3 dropdown-toggle text-white-50 fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            خــدمـاتـنـا
+                        </a>
+                    
+                        <ul class="dropdown-menu dropdown-menu-dark p-0" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item pt-2 text-end text-white-50" href="../../remote-section/remote.html">قسم الريموت</a></li>
+
+                            <li><a class="dropdown-item pt-2 text-end text-white-50" href="../../electronic-section/electronic.html">قسم الالكترونيات</a></li>
+
+                            <li><a class="dropdown-item pt-2 text-end pb-2 text-white-50" href="../../receiver-section/receiver.html">قسم الريسيفرات</a></li>
+
+                            <li><a class="dropdown-item pt-2 text-end pb-2 text-white-50" href="../../led-section/led.html"> قسم المساطر</a></li>
+                            
+                            <li><a class="dropdown-item pt-2 text-end pb-2 text-white-50" href="../../camera-section/camera.html"> قسم الكاميرات</a></li>
+                            
+                            <li><a class="dropdown-item pt-2 text-end pb-2 text-white-50" href="../accessory.html"> قسم الاكسسوار</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End nav ---- brand in left of page  -->
+
+    <!-- %%% start nav  in center of page %%% -->
+    <ul class="nav p-2 navbar-expand-lg fixed-top justify-content-center align-items-center" id="navbarSupportedContent" style="top: 0px !important;">
+
+        <li class="nav-item" data-aos="fade-down" data-aos-duration="3000">
+            <a class="nav-link active fs-5 home" aria-current="page" href="../../../index.html">
+                الرئيسيه
+            </a>
+        </li>
+        <li class="nav-item" data-aos="fade-up" data-aos-duration="3000">
+            <a class="nav-link text-white-50 fs-5" href="../../../index.html">
+                عــن الشـركـه
+            </a>
+        </li>
+        <li class="nav-item brand" data-aos="fade-down" data-aos-duration="3000">
+            <a class="navbar-brand fs-2 fw-bold" href="../../../index.html">
+                مــول الــتــيــســيــر
+            </a>
+        </li>
+        <li class="nav-item" data-aos="fade-up" data-aos-duration="3000">
+            <a class="nav-link text-white-50 fs-5" href="../../../index.html">
+                تواصل مـعـنـا
+            </a>
+        </li>
+
+        <li class="nav-item dropdown" data-aos="fade-down" data-aos-duration="3000">
+            <a class="nav-link dropdown-toggle text-white-50 fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-circle-chevron-down"></i>
+                خــدمـاتـنـا
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark p-0" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item pt-2 text-end text-white-50" href="../../remote-section/remote.html">قسم الريموت</a></li>
+
+                <li><a class="dropdown-item pt-2 text-end text-white-50" href="../../electronic-section/electronic.html">قسم الالكترونيات</a></li>
+
+                <li><a class="dropdown-item pt-2 text-end pb-2 text-white-50" href="../../receiver-section/receiver.html">قسم الريسيفرات</a></li>
+
+                <li><a class="dropdown-item pt-2 text-end pb-2 text-white-50" href="../../accessory-section/accessory.html"> قسم الاكـسـسـوار</a></li>
+                
+                <li><a class="dropdown-item pt-2 text-end pb-2 text-white-50" href="../../camera-section/camera.html"> قسم الكاميرات</a></li>
+                
+                <li><a class="dropdown-item pt-2 text-end pb-2 text-white-50" href="../../led-section/led.html"> قسم المساطر</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <!-- %%% End nav in center of page %%% -->
+
+    <!-- start product-image display in large and medium screen only -->
+    <div class="product mt-3 position-relative " style="top: 75px !important;">
+        <div class="container">
+            
+            <h2 class="main-h2 text-center fw-bold mt-1 pt-3 pb-3 ps-3 pe-3 position-relative" >
+                دوائر كهربائية 
+            </h2>
+
+            <div class="product-box d-flex flex-column justify-content-center align-items-center">
+                
+                <div class="big-image">
+                    <img src="imgs/tv-100w.jpeg" alt="">
+                </div>
+                
+                <div class="images row d-flex justify-content-around align-items-center gap-2 mt-3">
+                    
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة  انفرتر علبة ابيض 18w-8 - دخول 220 فولت</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر ليد اصفر كبيره GOLD - 97 Es </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر متعدد بالسلك GOLD - 08 Es </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر ليد زرقاء GOLD - 16 Eb </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر ليد ايدج خضراء و صفراء صغيرة </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر LCD-HT لمبة 4 </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/tv-100w.jpeg" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة بور تليفزيون 100 وات </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/tv-180w.jpeg" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة بور تليفزيون 180 وات </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة بور شاشة صغيرة CA-888 </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة بور شاشة كبيرة CA-901 </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/soiara-zarka.jpeg" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة بور ريسيفر صغيره DVB-001 </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/hamra-5taraf.jpeg" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5">  دائرة بور ريسيفر وسط DVB-009   </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/kebera-zarka.jpeg" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5">  دائرة بور ريسيفر كبيرة   </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/001+.jpeg" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5">  دائرة بور ريسيفر 5 طرف DVB - 001+   </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/hamra-moftah.jpeg" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5">  دائرة بور ريسيفر بالمفتاح DVB-4   </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/soot-2030.jpeg" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة صوت 2030 </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة صوت شاشة فلات </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة مين يونيفرسال شاشة + برسات و سنسور </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة مين TP.V56.PB801_"43 </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة مين SKR.819_"32 </p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائرة مين VS.TP53U22.21 _"32 </p>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="small-img-div">
+                            <img src="imgs/" alt="" class="small-x">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center fw-bold fs-5"> دائره كاميرا 1080 _HD  </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end product-image display in large and medium screen only -->
+
+    <!-- start led-carousel display in mobile screen only -->
+    <div class="product-carousel p-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-start">
+                <div class="product-carousel-image">
+  
+                    <div class="slide-container swiper">
+
+                        <div class="slide-content-new">
+                            <div class="card-wrapper swiper-wrapper">
+
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة  انفرتر علبة ابيض 18w-8 - دخول 220 فولت</p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر ليد اصفر كبيره GOLD - 97 Es </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر متعدد بالسلك GOLD - 08 Es </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر ليد زرقاء GOLD - 16 Eb </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر ليد ايدج خضراء و صفراء صغيرة </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة انفرتر LCD-HT لمبة 4 </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/tv-100w.jpeg" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة بور تليفزيون 100 وات </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/tv-180w.jpeg" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة بور تليفزيون 180 وات </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة بور شاشة صغيرة CA-888 </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة بور شاشة كبيرة CA-901 </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/soiara-zarka.jpeg" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة بور ريسيفر صغيره DVB-001 </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/hamra-5taraf.jpeg" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5">  دائرة بور ريسيفر وسط DVB-009   </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/kebera-zarka.jpeg" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5">  دائرة بور ريسيفر كبيرة   </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/001+.jpeg" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5">  دائرة بور ريسيفر 5 طرف DVB - 001+   </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/hamra-moftah.jpeg" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5">  دائرة بور ريسيفر بالمفتاح DVB-4   </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/soot-2030.jpeg" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة صوت 2030 </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة صوت شاشة فلات </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة مين يونيفرسال شاشة + برسات و سنسور </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة مين TP.V56.PB801_"43 </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة مين SKR.819_"32 </p>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائرة مين VS.TP53U22.21 _"32 </p>
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="small-img-div">
+                                        <img src="imgs/" alt="" class="small-x">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text text-center fw-bold fs-5"> دائره كاميرا 1080 _HD  </p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end led-carousel display in mobile screen only -->
+
+    <!-- start canvas-button-right -->
+    <ul class="position-fixed top-50 end-0">
+        <button class="btn main-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-chevron-left"></i>   
+        </button>
+    </ul>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">اختر نوع الاكـسـسـوار </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div class="offcanvas-body">
+            
+            <div>
+                اضغط هنا لتختار   نوع الاكسسوار
+            </div>
+
+            <div class="dropdown mt-2">
+                <button class="btn main-button dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                    اختر الاكـسـسـوار
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item fs-5" href="../adasat/adasat.html">العدسات </a></li>
+                    <li><a class="dropdown-item fs-5" href="../wsalat/wslat.html">الوصلات</a></li>
+                    <li><a class="dropdown-item fs-5" href="../aslak/aslak.html">الاسلاك</a></li>
+                    <li><a class="dropdown-item fs-5" href="../adapter/adapter.html">ادبتر { الشاحن }</a></li>
+                    <li><a class="dropdown-item fs-5" href="../stand-screen/stand-screen.html">حامل الشاشة</a></li>
+                    <li><a class="dropdown-item fs-5" href="../tbk-dsh/tbk-dsh.html">طبق الدش</a></li>
+                    <li><a class="dropdown-item fs-5" href="../sensor/sensor.html">سنسور الريسيفر</a></li>
+                    <li><a class="dropdown-item fs-5" href="../dwayer/dwayer.html">الدوائر الكهربائية</a></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End canvas-button-right -->
+
+    <!-- start footer -->
+    <footer class="text-white-50 pt-4 pb-2" style="margin-top: 100px;">
+        <div class="container">
+            
+            <div class="row pt-4 pb-3 justify-content-center align-items-start">
+        
+                <div class="col-lg-4 col-md-12 footer-text" data-aos="fade-down" data-aos-duration="1000">
+                    <h1>
+                    <a href="../../index.html" class="fw-bold">مــول الـتــيــسـيـر </a>
+                    </h1>
+                    <p class="pt-3 mt-2 lh-lg lead">لدينا الكادر الماهر والمؤهل لمساعدتك فى ما تجتاجه من خدمات فى مجال الصيانة و فى مجال الريسيفر و الريموتو جميع ما يخص الالكترونيات</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 links pe-3" data-aos="fade-up" data-aos-duration="1000">
+                    <ul class="ps-0">
+                    
+                    <li class="pb-1">
+                        <i class="fa-solid fa-angles-right pe-1 ps-2"></i>
+                        <a href="../../../index.html" class=" text-uppercase text-white-50">الرئـيـسـيـة</a>
+                    </li>
+                    
+                    <hr class="p-0 m-0">
+                    
+                    <li class="pb-2 pt-2">
+                        <i class="fa-solid fa-angles-right pe-1 ps-2"></i>
+                        <a href="../../../index.html" class="text-uppercase text-white-50">عـــن الشـركـه</a>
+                    </li>
+                    
+                    <hr class="p-0 m-0">
+                    
+                    <li class="pb-2 pt-2">
+                        <i class="fa-solid fa-angles-right pe-1 ps-2"></i>
+                        <a href="../../../index.html" class="text-uppercase text-white-50">الاقـسـام</a>
+                    </li>
+                    
+                    <hr class="p-0 m-0">
+                    
+                    <li class="pb-2 pt-2">
+                        <i class="fa-solid fa-angles-right pe-1 ps-2"></i>
+                        <a href="../../../index.html" class="text-uppercase text-white-50">تـواصـل مـعـنـا</a>
+                    </li>
+                    <hr class="p-0 m-0">
+                    
+                    </ul>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 address" data-aos="fade-up" data-aos-duration="1000">
+                    <ul class="ps-0">
+                        <li class="d-flex align-items-center pt-3 pb-2">
+                            <i class="fa-solid fa-location-dot fa-2x pe-3 ps-5"></i>
+                            <p class="m-0">سـوهـاج - ابـراج العـروبـه - برج المهندسين 2</p>
+                        </li>
+                        <li class="d-flex align-items-center pt-3 pb-2">
+                            <i class="fa-solid fa-clock fa-2x pe-3 ps-5"></i>
+                            <p class="m-0">مواعيد العمل  : يوميا من 10 ص حتى 10 م</p>
+                        </li>
+                        <li class="d-flex align-items-center pt-3 pb-2">
+                            <i class="fa-solid fa-phone-volume fa-2x pe-3 ps-5"></i>
+                            <p class="m-0">
+                                01146019309
+                                <br>
+                                01125659563
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+            
+            <hr>
+
+            <p class="created text-center fw-bold">
+                Created By <br>
+                <i class="fas fa-heart"></i> 
+                AHMED RAMADAN
+                <i class="fas fa-heart"></i> 
+            </p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- led number js this include product-image in led-number -->
+    <script src="../../led-section/js-led-number/led-number.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- pages-sections js this include carousel-sections in camera and led -->
+    <script src="../../js-pages-only/pages-sections.js"></script>
+
+    <!-- main js in project all -->
+    <script src="../../../js/tayseer.js"></script>
+</body>
+</html>

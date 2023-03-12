@@ -1,0 +1,88 @@
+.camera-carousel{
+    margin-top: 90px !important;
+    .row{
+        .cam-image{
+            .swiper{
+                .card-wrapper{
+                    height: 500px !important;
+                    @include mobileScreen{
+                        height: fit-content !important;
+                    }
+                    .card{
+                        background-color: #d8e6ec;
+                        border-color: transparent;
+                        img{
+                            @include mobileScreen{
+                                padding: 0px !important;
+                            }
+                            padding: 65px !important;
+                            width: 100% !important;
+                            height: 100% !important;
+                        }
+                    }
+                }
+                .swiper-navBtn{
+                    color: rgb(180, 180, 180) !important;
+                }
+            }
+        }
+        .cam-text{
+            h1{
+                font-size: 45px;
+                color: $main-color;
+            }
+            span{
+                color: $main-color !important;
+            }
+        }
+    }
+}
+.gallery-camera{
+        .row{
+            .card{
+                overflow: hidden;
+                height: fit-content !important;
+                &:hover{
+                    img{
+                        transform: scale(1.2, 1.2) !important;
+                    }
+                    .card-body{
+                        h3{
+                            color: white !important;
+                        }
+                        .card-icons{
+                            i{
+                                color: $main-color !important;
+                            }
+                        }
+                    }
+                }
+                .card-img{
+                    height: 300px !important;
+                    overflow: hidden;
+                    border-radius: 0px !important;
+                    padding: 25px;
+                    border: 2px solid $dark-color;
+                    @include mobileScreen{
+                        height: 350px !important;
+                    }
+                    img{
+                        height: 100% !important;
+                        width: 100% !important;
+                    }
+                }
+                .card-body{
+                    height: fit-content !important;
+                    background-color: $dark-color;
+                    h3{
+                        color: $main-color;
+                    }
+                    .card-icons{
+                        i{
+                            color: rgb(245, 245, 0) ;
+                        }
+                    }
+                }
+            }
+        }
+}

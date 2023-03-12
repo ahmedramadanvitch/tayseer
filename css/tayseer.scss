@@ -1,0 +1,71 @@
+// helper folder
+@import 'sass/helper/variables';
+@import 'sass/helper/mixins';
+
+// components folder
+@import 'sass/components/pre-loader';
+@import 'sass/components/button-h2';
+@import 'sass/components/icons-right-in-sections-page';
+@import 'sass/components/canvas-button-led-section';
+
+// pages folder
+@import 'sass/pages/home';
+@import 'sass/pages/about';
+@import 'sass/pages/sections';
+@import 'sass/pages/team-leader';
+@import 'sass/pages/trusted-company';
+@import 'sass/pages/contact';
+
+// pages sections for Example (remote-section ; camera-section ; led-section)
+@import '../pages/remote-section/sass-css/remote';
+@import '../pages/receiver-section/sass-css/receiver';
+@import '../pages/camera-section/sass-css/camera';
+@import '../pages/accessory-section/sass-css/accessory';
+@import '../pages/led-section/sass-css/led';
+@import '../pages/product-sass/product-led-page';
+
+// layout folder
+@import 'sass/layout/header';
+@import 'sass/layout/landing-section-pages';
+@import 'sass/layout/footer';
+
+
+
+body{
+    font-family: $font-cairo !important;
+    direction: rtl !important;
+}
+*{
+    transition: all .5s linear !important; 
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1170px !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .container {
+        max-width: 960px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .container {
+        max-width: 720px !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .container {
+        max-width: 540px !important;
+    }
+}
+
+ul{
+    @include reset-ul;
+}
+a{
+    @include reset-a-link;
+}
+hr{
+    @include main-hr;
+}

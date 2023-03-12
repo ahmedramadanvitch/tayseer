@@ -1,0 +1,60 @@
+/* start landing-form */
+.landing-form{
+    width: 100%;
+    height: 100vh;
+    @include mobileScreen{
+        background-color: #19283f !important;
+        display: flex;
+        flex-direction: column;
+    }
+    @include smallScreen{
+        display: flex;
+        flex-direction: column;
+        background-color: #19283f !important;
+    }
+    form{
+        i , h1{
+            color: $main-color !important;
+        }
+        hr{
+            margin: 10px auto !important;
+            background-color:  $main-color !important;
+        }
+        input{
+            padding: 15px !important;
+            border: none;
+            background-color: #ebebeb !important;
+            box-shadow: 0px 5px 2px -2px #afafaf !important;
+            border-radius: 5px;
+            font-size: 19px;
+        }
+        button{
+            background-color: $main-color !important;
+        }
+    }
+    iframe{
+        height: 90%;
+        width: 100%;
+        position: relative;
+        z-index: 20;
+        @include mobileScreen{
+            position: relative;
+            top: 20px;
+            height: 51vh;
+        }
+        @include smallScreen{
+            height: 280px;
+            position: relative;
+            z-index: 55555;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    footer{
+        position: relative;
+        top: 0px !important;
+    }
+}
+/* end landing-form */

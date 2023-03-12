@@ -1,0 +1,63 @@
+// start about-tayseer
+.about-tayseer {
+  .container {
+    .row {
+      h1 {
+        color: $dark-color;
+      }
+      .about-right {
+        .about-imgs {
+          div {
+            width: 150px;
+            height: 180px;
+            overflow: hidden;
+            padding: 5px;
+            gap: 10px;
+            img {
+              height: 100%;
+              width: 100%;
+              animation-name: rotate-img;
+              animation-duration: 1s;
+              animation-timing-function: linear;
+              animation-fill-mode: both;
+              animation-iteration-count: infinite;
+              animation-direction: alternate;
+              @keyframes rotate-img {
+                0% {
+                  transform: rotate(10deg);
+                }
+                100% {
+                  transform: rotate(-10deg);
+                }
+              }
+            }
+          }
+        }
+        span {
+          color: $main-color;
+        }
+      }
+      .why-choose-left {
+        .text-icons {
+        //   i {
+        //     color: $main-color;
+        //   }
+          h4 {
+            color: $dark-color;
+          }
+          &:hover {
+            box-shadow: inset -480px 0px 0px 0px rgb(236, 236, 236);
+            // i {
+            //   font-size: 45px !important;
+            //   color: $dark-color;
+            // }
+            h4 {
+              color: $main-color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end about-tayseer

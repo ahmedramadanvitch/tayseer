@@ -1,0 +1,76 @@
+/* start footer */
+footer{
+    background-color: #19283f;
+    position: relative !important;
+    z-index: 100 !important;
+    @include smallScreen{
+        position: relative !important;
+        top: 118px !important;
+    }
+    @include mobileScreen{
+        position: relative !important;
+        top: 100px !important;
+    }
+    .row{
+        .footer-text{
+            h1{
+                a{
+                    color: $main-color !important;
+                }
+            }
+        }
+        .links{
+            ul{
+                li{
+                    padding: 10px 0px !important;
+                    &:hover{
+                        a{
+                            color: $main-color !important;
+                        }
+                        .fa-angles-right{
+                            color: rgb(177, 177, 177) !important;
+                        }
+                    }
+                    i{
+                        color: $main-color;
+                    }
+                }
+                hr{
+                    background-color: $main-color !important;
+                    height: 3px !important;
+                }
+            }
+        }
+        .address{
+            ul{
+                li{
+                    &:hover{
+                        i{
+                            color: $gray-color;
+                        }
+                        p{
+                            color: $main-color;
+                        }
+                    }
+                    i{
+                        color: $main-color;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        background-color: aliceblue !important;
+        width: 100% !important;
+        height: 4px !important;
+    }
+    .created{
+        &:hover{
+            i{
+                color: $main-color !important;
+            }
+        }
+    }
+}
+/* End footer */

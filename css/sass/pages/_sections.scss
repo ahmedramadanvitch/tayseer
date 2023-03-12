@@ -1,0 +1,130 @@
+// start sections
+.sections{
+    width: 100%;
+    @include img-background{
+        // background-image: url(../../../../imgs/landing-mfk.jpg) !important;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(11, 29, 65, 0.74);
+    }
+    .container{
+        z-index: 11;
+        h1{
+            z-index: 1;
+            font-size: 50px;
+            color: $main-color !important;
+        }
+        .row{
+            z-index: 11;
+            .boxes{
+                border-radius: 10px !important;
+                background-color: #051d3eb0 !important;
+                transition: all .5s linear;
+                overflow: hidden;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background-color: #1f66bd4f;
+                    right: -40px;
+                    transition: all .5s linear;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background-color: #1f66bd4d;
+                    left: -40px;
+                    transition: all .5s linear;
+                }
+                &:hover{
+                    &::after{
+                        animation-name: after-;
+                        animation-duration: .8s;
+                        animation-fill-mode: forwards;
+                        transition: all .5s linear;
+                        @keyframes after- {
+                            0%{
+                                transform: translateX(0px);
+                            }
+                            50%{
+                                transform: translateX(-180px);
+                                
+                            }
+                            100%{
+                                transform: translateX(-180px) scale(20, 20);
+                            }
+                        }
+                    }
+                    &::before{
+                        animation-name: before-;
+                        animation-duration: .8s;
+                        animation-fill-mode: forwards;
+                        transition: all .5s linear;
+                        @keyframes before- {
+                            0%{
+                                transform: translateX(0px);
+                                opacity: .3 !important;
+                            }
+                            50%{
+                                transform: translateX(180px);
+                                opacity: .3 !important;
+                            }
+                            100%{
+                                transform: translateX(180px) scale(20, 20);
+                                opacity: .3 !important;
+                            }
+                        }
+                    }
+                    .icon-box , .text-box{
+                        z-index: 1000;
+                    }
+                    button{
+                        background-color: #0f3e804d !important;
+                        border: 2px solid white;
+                    }
+                }
+                .icon-box{
+                    padding: 10px;
+                    text-align: center;
+                    i{
+                        font-size: 60px;
+                        animation-name: rotate-img;
+                        animation-duration: .5s;
+                        animation-timing-function: linear;
+                        animation-fill-mode: both;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate;
+                        @keyframes rotate-img {
+                            0%{
+                                transform: rotate(5deg);
+                            }
+                            100%{
+                                transform: rotate(-5deg);
+                            }
+                        }
+                    }
+                }
+                .text-box{
+                    h3{
+                        color: $main-color;
+                    }
+                    p{
+                        color: rgb(212, 212, 212) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+// end sections

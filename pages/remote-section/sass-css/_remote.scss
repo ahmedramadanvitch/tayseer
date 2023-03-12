@@ -1,0 +1,44 @@
+.gallery-remote{
+    h2{
+        color: $main-color;
+    }
+    .gallery{
+        .card{
+            background-color: rgb(240, 240, 240);
+            overflow: hidden;
+            height: fit-content !important;
+            @include mobileScreen{
+                width: 17rem !important;
+                height: 650px !important;
+            }
+            &:hover{
+                background-color: $dark-color;
+                h3{
+                    color: $main-color !important;
+                }
+                img{
+                    transform: scale(1.6, 1.6);
+                }
+            }
+            
+            .card-img{
+                height: 450px !important;
+                overflow: hidden;
+                @include mobileScreen{
+                    height: 575px !important;
+                }
+                img{
+                    height: 100% !important;
+                    width: 100% !important;
+                }
+            }
+            .card-body{
+                h3{
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+}
+
+

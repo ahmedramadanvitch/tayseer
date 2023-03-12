@@ -1,0 +1,33 @@
+// start icons-right
+.icons-right{
+    z-index: 30;
+    transform: translateY(-50%) !important;
+    @include smallScreen{
+        transform: translateY(-25%) !important;
+    }
+    li{
+        a{
+            &:hover{
+                color: $main-color !important;
+                transition: all .1s linear !important;
+            }
+            padding: 2px !important;
+            animation-name: rotate-icon;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            color: $dark-color !important;
+            @keyframes rotate-icon {
+                0% {
+                    transform: rotate(-3deg);
+                }
+                100% {
+                    transform: rotate(3deg);
+                }
+            }
+        }
+    }
+}
+// end icons-right 

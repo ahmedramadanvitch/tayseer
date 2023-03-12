@@ -1,0 +1,84 @@
+.main-button{
+    background-color: $main-color !important;
+    color: white !important;
+    font-size: 20px !important;
+    &:hover{
+        background-color: #1f809e !important;
+    }
+    &:focus{
+        box-shadow: 0 0 0 4px #1f809e59 !important;
+    }
+}
+.dark-button{
+    background-color: $dark-color !important;
+    color: white !important;
+    font-size: 20px !important;
+    &:hover{
+        background-color: #30456e !important;
+    }
+}
+.main-h2{
+    color: $main-color;
+    border: 3px solid $main-color;
+    width: fit-content;
+    margin: 10px auto;
+    box-shadow: inset 0 0 0 transparent;
+    &::after{
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 30px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $main-color;
+        transition: all .3s linear;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        right: -30px;
+        top: 30px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $main-color;
+        transition: all .3s linear;
+    }
+    &:hover{
+        &::after{
+            left: 0px !important;
+        }
+        &::before{
+            right: 0px !important;
+        }
+        box-shadow: inset 175px 0 0 0 $main-color , inset -175px 0 0 0 $main-color;
+        color: white !important;
+    }
+}
+/* start right button scrolling in page */
+.btn-up{
+    bottom: 10px;
+    right: 9px;
+    padding: 0px;
+    z-index: 300;
+    position: fixed;
+    display: none;
+    cursor: pointer;
+    color: $main-color;
+    animation-name: button-move;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    opacity: 1;
+}
+@keyframes button-move {
+    0%{
+        right: -70px;
+    }
+    50%{
+        right: 20px;    
+    }
+}
+/* end right button scrolling in page */

@@ -1,0 +1,25 @@
+.trusted-company{
+    .trusted-text{
+        hr{
+            width: 30% !important;
+            background-color: $dark-color !important;
+        }
+        p{
+            bottom: 0px;
+            font-size: 25px;
+            padding: 0px 20px;
+            letter-spacing: 1.5px;
+            color: $main-color;
+        }
+    } 
+    .trusted-image{
+        div{
+            width: 150px;
+            height: 100px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

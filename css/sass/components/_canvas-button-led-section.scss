@@ -1,0 +1,45 @@
+// start canvas button
+button[data-bs-target="#offcanvasExample"]{
+    height: 60px !important;
+    padding: 3px !important;
+    position: relative !important;
+}
+
+.offcanvas-end{
+    width: 250px !important;
+    .offcanvas-header{
+        background-color: $main-color;
+        h5{
+            color: white !important;
+        }
+        .btn-close{
+            &:hover{
+                background-color: #2a7e97ad !important;
+            }
+        }
+    }
+    .offcanvas-body{
+        padding: 5px !important;
+        .dropdown{
+            .dropdown-toggle{
+                width: 100% !important;
+            }
+            .dropdown-menu{
+                width: 100% !important;
+                background-color: #e7e7e7 !important;
+                li:not(:last-child){
+                    border-bottom:  1px solid #9b9b9b !important;
+                }
+                .dropdown-item{
+                    text-align: start !important;
+                    &:hover{
+                        color: $main-color !important;
+                        background-color: $dark-color !important;
+                        padding-right: 35px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+// end canvas button
